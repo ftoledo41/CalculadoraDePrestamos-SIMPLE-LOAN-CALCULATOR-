@@ -1,0 +1,230 @@
+/* ESTILOS GENERALES */
+html, body {
+    height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #3d6e96;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+	margin: 20px auto;
+	background-color: #ecf1fe;
+	width: 1200px;
+	max-width: 80%;
+    display: flex;
+    padding: 20px 1em;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 42px 0;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+}
+
+.column1 {
+	width: 50%;
+	padding: 0 3em;
+}
+
+label {
+	display: block;
+	margin: 26px 0 0;
+	font-weight: bold;
+}
+
+input {
+	width: 100%;
+	padding: 12px 1em;
+	margin: 12px 0 20px;
+}
+
+.errorMessage {
+	color: red;
+	font-size: 1rem;
+}
+
+.calc {
+	margin: 12px 0;
+}
+
+button {
+	padding: 12px 1em;
+	margin: 15px 0em;
+	border: none;
+	cursor: pointer;
+}
+
+#calculate-button {
+	background-color: #0157ff;
+	color: #fff;
+	margin: 0 1em 0 0;
+}
+
+button[type="reset"] {
+	background-color: #574b4b;
+	border: none;
+    color: #fff;
+}
+
+.results {
+    width: 50%;
+    padding: 0 3em;
+    text-align: center;
+}
+
+.results h2 {
+	font-size: 1.6rem;
+	margin: 30px 0 26px;
+}
+
+#monthlyPayments {
+	font-size: 3rem;
+	color: #3d6e96;
+	font-weight: 900;
+}
+
+.results h3 {
+	font-size: 1.12rem;
+	margin: 30px 0;
+}
+
+.results p {
+	font-size: 1.9rem;
+    color: #3d6e96;
+}
+
+.table-container {
+	margin: 12px auto;
+	background-color: #ecf1fe;
+	width: 1200px;
+	max-width: 100%;
+	padding: 12px 3em;
+}
+
+.table-container h2 {
+	margin: 27px auto;
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+} 
+
+th, td {
+    border: 1px solid black; 
+    padding: 8px; 
+    text-align: center; 
+} 
+
+th {
+    background-color: #a8bdf3; 
+}
+
+/* Media queries para hacer la tabla responsive */
+@media only screen and (max-width: 600px) {
+    .table-container {
+        overflow-x: scroll; /* Agregamos scroll horizontal en pantallas pequeñas */
+    }
+    
+    th, td {
+        font-size: 14px; /* Reducimos el tamaño del texto en celdas en pantallas pequeñas */
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    th, td {
+        font-size: 12px; /* Reducimos aún más el tamaño del texto en celdas en pantallas muy pequeñas */
+    }
+
+    .results {
+        padding: 0 2em;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    
+    button {
+        width: 100%;
+    }
+
+.column1,
+.results {
+    width: 100%;
+}
+
+.results {
+    padding-top: 20px;
+}    
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }      
+
+.column1,
+.results {
+    width: 100%;
+}
+
+.results {
+    padding-top: 20px;
+}    
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .container {
+        flex-direction: row;
+    }      
+
+.column1,
+.results {
+    width: 50%;
+}    
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        flex-direction: row;
+    }      
+
+.column1 {
+    width: 50%;
+}
+
+.results {
+    width: 50%;
+}    
+
+}
